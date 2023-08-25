@@ -1,3 +1,12 @@
 export const Filter = ({ filter, onFilter }) => {
-  return <input type="text" value={filter} onChange={evt => onFilter(evt.target.value)} />;
+    return (  <div>
+        <p>Find contacts by name</p>
+      <input
+        type="text"
+        value={filter}
+        onChange={evt => onFilter(evt.target.value)}
+      />
+      
+    </div>)
+
 };
