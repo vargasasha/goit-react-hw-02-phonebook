@@ -23,15 +23,15 @@ export class App extends Component {
       )
     ) {
       alert(`${newContact.name} is already in contacts`);
-    } else {
     }
-
-
-    this.setState(prevState => {
-      return {
-        contacts: [...prevState.contacts, newContact],
-      };
-    });
+    else {
+      this.setState(prevState => {
+        return {
+          contacts: [...prevState.contacts, newContact],
+        };
+      });
+    }
+    
   };
 
   onFilterName = filterName => {
